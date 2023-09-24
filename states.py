@@ -1,0 +1,78 @@
+state_1 = {
+    "away-team": "Dodgers",
+    "home-team": "Padres",
+    "away-score": 0,
+    "home-score": 0,
+    "inning": 1,
+    "inning-half": "bottom",
+    "outs": 0,
+    "batter": "Bogaerts",
+    "pitcher": "Kershaw",
+    "pitch_count": 0,
+    "count": [0, 0],
+    "on_base": [None, None, None, None],
+    "last-play": "",
+}
+
+state_2 = {
+    "away-team": "Dodgers",
+    "home-team": "Padres",
+    "away-score": 0,
+    "home-score": 0,
+    "inning": 1,
+    "inning-half": "bottom",
+    "outs": 0,
+    "batter": "Bogaerts",
+    "pitcher": "Kershaw",
+    "pitch_count": 0,
+    "count": [1, 0],
+    "on_base": [None, None, None, None],
+    "last-play": "",
+}
+
+state_3 = {
+    "away-team": "Dodgers",
+    "home-team": "Padres",
+    "away-score": 0,
+    "home-score": 0,
+    "inning": 1,
+    "inning-half": "bottom",
+    "outs": 0,
+    "batter": "Tatis Jr.",
+    "pitcher": "Kershaw",
+    "pitch_count": 12,
+    "count": [0, 0],
+    "on_base": ["Bogaerts", None, None, None],
+    "last-play": "Single",
+}
+
+state_4 = {
+    "away-team": "Dodgers",
+    "home-team": "Padres",
+    "away-score": 0,
+    "home-score": 2,
+    "inning": 1,
+    "inning-half": "bottom",
+    "outs": 0,
+    "batter": "Soto",
+    "pitcher": "Kershaw",
+    "pitch_count": 16,
+    "count": [0, 0],
+    "on_base": [None, None, None, None],
+    "last-play": "Home Run",
+}
+
+state_5 = {
+    "away-team": "Dodgers",
+    "home-team": "Padres",
+    "away-score": 2,
+    "home-score": 7,
+    "inning": 7,
+    "outs": 2,
+    "batter": "Soto",
+    "pitcher": "Kershaw",
+    "pitch_count": 12,
+    "count": [0, 0],
+    "on_base": ["Machado", "Tatis", "", ""],
+    "last-play": "",
+}
