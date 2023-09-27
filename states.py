@@ -1,3 +1,19 @@
+state_none = {
+    "away-team": "TBD",
+    "home-team": "TBD",
+    "away-score": "0",
+    "home-score": "0",
+    "inning": "0",
+    "inning-half": "top",
+    "outs": "0",
+    "batter": "",
+    "pitcher": "",
+    "pitch_count": "0",
+    "count": [0, 0],
+    "on_base": [None, None, None, None],
+    "last-play": "",
+}
+
 state_1 = {
     "away-team": "Dodgers",
     "home-team": "Padres",
@@ -11,7 +27,7 @@ state_1 = {
     "pitch_count": 0,
     "count": [0, 0],
     "on_base": [None, None, None, None],
-    "last-play": "",
+    "last-play": "Game Start",
 }
 
 state_2 = {
@@ -24,10 +40,10 @@ state_2 = {
     "outs": 0,
     "batter": "Bogaerts",
     "pitcher": "Kershaw",
-    "pitch_count": 0,
-    "count": [1, 0],
+    "pitch_count": 5,
+    "count": [3, 2],
     "on_base": [None, None, None, None],
-    "last-play": "",
+    "last-play": "Fastball - Strike",
 }
 
 state_3 = {
@@ -68,11 +84,12 @@ state_5 = {
     "away-score": 2,
     "home-score": 7,
     "inning": 7,
+    "inning-half": "bottom",
     "outs": 2,
-    "batter": "Soto",
+    "batter": "Kim",
     "pitcher": "Kershaw",
-    "pitch_count": 12,
+    "pitch_count": 75,
     "count": [0, 0],
-    "on_base": ["Machado", "Tatis", "", ""],
-    "last-play": "",
+    "on_base": ["Machado", "Tatis", None, None],
+    "last-play": "Strikeout",
 }

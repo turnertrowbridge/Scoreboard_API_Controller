@@ -1,7 +1,8 @@
+from time import sleep
+
 import requests
 import json
-from states import state_1, state_2, state_3, state_4
-
+import states
 
 api_url = "https://dnvjlmuy5f.execute-api.us-west-2.amazonaws.com/prod"
 
@@ -48,37 +49,23 @@ def post_data(payload_data):
         print(f"Request error: {e}")
 
 
-# def post_score(away_score, home_score):
-#     payload_data = {
-#         "away-team": "Dodgers",
-#         "home-team": "Padres",
-#         "away-score": 2,
-#         "home-score": 7,
-#         "inning": 7,
-#         "outs": 2,
-#         "batter": "Soto",
-#         "pitcher": "Kershaw",
-#         "pitch_count": 12,
-#         "count": [0, 0],
-#         "on_base": ["Machado", "Tatis", "", ""],
-#         "last-play": "",
-#     }
-#     post_data(payload_data)
-
 def load_states():
-    states = {
-        "1": state_1,
-        "2": state_2,
-        "3": state_3,
-        "4": state_4,
+    game_states = {
+        "none": states.state_none,
+        "1": states.state_1,
+        "2": states.state_2,
+        "3": states.state_3,
+        "4": states.state_4,
+        "5": states.state_5,
     }
-    return states
+    return game_states
+
 
 def main():
     cur_state_num = 1
-    states = load_states()
+    game_states = load_states()
     while True:
-        user_input = input("Type get, score, state, or exit:\n-> ").lower()
+        user_input = input("Type get, score, state, demo, reset, or exit:\n-> ").lower()
         if user_input == "get":
             response = call_get_request()
             print(response)
@@ -93,10 +80,20 @@ def main():
             if answer == "next":
                 cur_state_num = str(int(cur_state_num) + 1)
             else:
-                cur_state_num = answer
-            if cur_state_num == str(len(states) + 1) or cur_state_num == "0":
+                cur_state_num = str(answer)
+            if int(cur_state_num) > (len(game_states)) or int(cur_state_num) < 1:
                 cur_state_num = "1"
-            post_data(states[cur_state_num])
+            post_data(game_states[cur_state_num])
+        elif user_input == "demo":
+            print()
+            for i in range(1, 6):
+                print(f"Display state {i}?")
+                input("Press enter to continue")
+                post_data(game_states[str(i)])
+                print()
+        elif user_input == "reset":
+            post_data(states.state_none)
+
         print("\n")
 
 
