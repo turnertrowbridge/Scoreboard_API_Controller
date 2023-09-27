@@ -27,7 +27,7 @@ state_1 = {
     "pitch_count": 0,
     "count": [0, 0],
     "on_base": [None, None, None, None],
-    "last-play": "Game Start",
+    "last-play": "Middle of Inning",
 }
 
 state_2 = {
@@ -83,13 +83,13 @@ state_5 = {
     "home-team": "Padres",
     "away-score": 2,
     "home-score": 7,
-    "inning": 7,
-    "inning-half": "bottom",
-    "outs": 2,
-    "batter": "Kim",
-    "pitcher": "Kershaw",
-    "pitch_count": 75,
-    "count": [0, 0],
-    "on_base": ["Machado", "Tatis", None, None],
+    "inning": 9,
+    "inning-half": "top",
+    "outs": 1,
+    "batter": "Betts",
+    "pitcher": "Hader",
+    "pitch_count": 4,
+    "count": [2, 1],
+    "on_base": ["temp", "temp", None, None],
     "last-play": "Strikeout",
 }
