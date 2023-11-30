@@ -4,7 +4,7 @@ import requests
 import json
 import states
 
-api_url = "https://dnvjlmuy5f.execute-api.us-west-2.amazonaws.com/prod"
+api_url = "https://w1fyv4m4j3.execute-api.us-west-2.amazonaws.com/prod"
 
 
 def call_get_request():
