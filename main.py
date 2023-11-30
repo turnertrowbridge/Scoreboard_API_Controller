@@ -57,6 +57,7 @@ def load_states():
         "3": states.state_3,
         "4": states.state_4,
         "5": states.state_5,
+        "6": states.state_6,
     }
     return game_states
 
@@ -86,7 +87,7 @@ def main():
             post_data(game_states[cur_state_num])
         elif user_input == "demo":
             print()
-            for i in range(1, 6):
+            for i in range(1, len(game_states)):
                 print(f"Display state {i}?")
                 input("Press enter to continue")
                 post_data(game_states[str(i)])
