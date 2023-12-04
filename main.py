@@ -52,12 +52,14 @@ def post_data(payload_data):
 def load_states():
     game_states = {
         "none": states.state_none,
+        "0": states.state_0,
         "1": states.state_1,
         "2": states.state_2,
         "3": states.state_3,
         "4": states.state_4,
         "5": states.state_5,
         "6": states.state_6,
+        "7": states.state_7,
     }
     return game_states
 
@@ -87,7 +89,7 @@ def main():
             post_data(game_states[cur_state_num])
         elif user_input == "demo":
             print()
-            for i in range(1, len(game_states)):
+            for i in range(len(game_states) - 1):
                 print(f"Display state {i}?")
                 input("Press enter to continue")
                 post_data(game_states[str(i)])

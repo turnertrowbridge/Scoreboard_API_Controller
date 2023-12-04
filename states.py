@@ -1,6 +1,8 @@
 state_none = {
     "away-team": "TBD",
+    "away-abrv": "TBD",
     "home-team": "TBD",
+    "home-abrv": "TBD",
     "away-score": 0,
     "home-score": 0,
     "inning": 0,
@@ -14,9 +16,29 @@ state_none = {
     "last-play": "",
 }
 
+state_0 = {
+    "away-team": "Dodgers",
+    "away-abrv": "LAD",
+    "home-team": "Padres",
+    "home-abrv": "SD",
+    "away-score": 0,
+    "home-score": 0,
+    "inning": 1,
+    "inning-half": "bottom",
+    "outs": 0,
+    "batter": "Bogaerts",
+    "pitcher": "Kershaw",
+    "pitch_count": 0,
+    "count": [0, 0],
+    "on_base": [None, None, None, None],
+    "last-play": "Game Start",
+}
+
 state_1 = {
     "away-team": "Dodgers",
+    "away-abrv": "LAD",
     "home-team": "Padres",
+    "home-abrv": "SD",
     "away-score": 0,
     "home-score": 0,
     "inning": 1,
@@ -32,7 +54,9 @@ state_1 = {
 
 state_2 = {
     "away-team": "Dodgers",
+    "away-abrv": "LAD",
     "home-team": "Padres",
+    "home-abrv": "SD",
     "away-score": 0,
     "home-score": 0,
     "inning": 1,
@@ -43,12 +67,14 @@ state_2 = {
     "pitch_count": 5,
     "count": [3, 2],
     "on_base": [None, None, None, None],
-    "last-play": "Fastball - Strike",
+    "last-play": "Strike",
 }
 
 state_3 = {
     "away-team": "Dodgers",
+    "away-abrv": "LAD",
     "home-team": "Padres",
+    "home-abrv": "SD",
     "away-score": 0,
     "home-score": 0,
     "inning": 1,
@@ -64,7 +90,9 @@ state_3 = {
 
 state_4 = {
     "away-team": "Dodgers",
+    "away-abrv": "LAD",
     "home-team": "Padres",
+    "home-abrv": "SD",
     "away-score": 0,
     "home-score": 2,
     "inning": 1,
@@ -78,25 +106,12 @@ state_4 = {
     "last-play": "Home Run",
 }
 
-state_5 = {
-    "away-team": "Dodgers",
-    "home-team": "Padres",
-    "away-score": 2,
-    "home-score": 7,
-    "inning": 9,
-    "inning-half": "top",
-    "outs": 1,
-    "batter": "Betts",
-    "pitcher": "Hader",
-    "pitch_count": 4,
-    "count": [2, 1],
-    "on_base": ["temp", "temp", None, None],
-    "last-play": "Strikeout",
-}
 
 state_5 = {
     "away-team": "Dodgers",
+    "away-abrv": "LAD",
     "home-team": "Padres",
+    "home-abrv": "SD",
     "away-score": 2,
     "home-score": 7,
     "inning": 9,
@@ -107,12 +122,14 @@ state_5 = {
     "pitch_count": 4,
     "count": [2, 1],
     "on_base": ["temp", "temp", None, None],
-    "last-play": "Strikeout",
+    "last-play": "Pop Fly",
 }
 
 state_6 = {
     "away-team": "Dodgers",
+    "away-abrv": "LAD",
     "home-team": "Padres",
+    "home-abrv": "SD",
     "away-score": 2,
     "home-score": 7,
     "inning": 9,
@@ -124,4 +141,22 @@ state_6 = {
     "count": [2, 1],
     "on_base": ["temp", "temp", None, None],
     "last-play": "Strikeout",
+}
+
+state_7 = {
+    "away-team": "Dodgers",
+    "away-abrv": "LAD",
+    "home-team": "Padres",
+    "home-abrv": "SD",
+    "away-score": 2,
+    "home-score": 7,
+    "inning": 0,
+    "inning-half": "top",
+    "outs": 0,
+    "batter": "",
+    "pitcher": "",
+    "pitch_count": 0,
+    "count": [2, 1],
+    "on_base": [None, None, None, None],
+    "last-play": "Game End",
 }
