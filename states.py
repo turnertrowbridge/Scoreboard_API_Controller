@@ -173,9 +173,9 @@ state_8 = {
     "batter": "Freeman",
     "pitcher": "Musgrove",
     "pitch_count": 107,
-    "count": [2, 1],
+    "count": [1, 2],
     "on_base": ["Peralta", "Heyward", "Outman", None],
-    "last-play": "Ball",
+    "last-play": "Strike",
 }
 
 state_9 = {
@@ -193,7 +193,7 @@ state_9 = {
     "pitch_count": 108,
     "count": [2, 2],
     "on_base": ["Peralta", "Heyward", "Outman", None],
-    "last-play": "Strike",
+    "last-play": "Ball",
 }
 
 state_10 = {
