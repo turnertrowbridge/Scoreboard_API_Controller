@@ -242,11 +242,11 @@ state_12 = {
     "inning": 9,
     "inning-half": "top",
     "outs": 1,
-    "batter": "Betts",
+    "batter": "Taylor",
     "pitcher": "Hader",
     "pitch_count": 9,
     "count": [2, 1],
-    "on_base": ["Taylor", "Outman", None, None],
+    "on_base": ["Outman", None, None, None],
     "last-play": "Ball",
 }
 
@@ -259,16 +259,34 @@ state_13 = {
     "home-score": 7,
     "inning": 9,
     "inning-half": "top",
-    "outs": 2,
+    "outs": 1,
     "batter": "Freeman",
+    "pitcher": "Hader",
+    "pitch_count": 9,
+    "count": [0, 0],
+    "on_base": ["Taylor", "Outman", None, None],
+    "last-play": "Single",
+}
+
+state_14 = {
+    "away-team": "Dodgers",
+    "away-abrv": "LAD",
+    "home-team": "Padres",
+    "home-abrv": "SD",
+    "away-score": 2,
+    "home-score": 7,
+    "inning": 9,
+    "inning-half": "top",
+    "outs": 2,
+    "batter": "Betts",
     "pitcher": "Hader",
     "pitch_count": 10,
     "count": [0, 0],
     "on_base": ["Taylor", "Outman", None, None],
-    "last-play": "Popout",
+    "last-play": "Strikeout",
 }
 
-state_14 = {
+state_15 = {
     "away-team": "Dodgers",
     "away-abrv": "LAD",
     "home-team": "Padres",
@@ -283,10 +301,10 @@ state_14 = {
     "pitch_count": 14,
     "count": [0, 0],
     "on_base": [None, None, None, None],
-    "last-play": "Strikeout",
+    "last-play": "Popout",
 }
 
-state_15 = {
+state_16 = {
     "away-team": "Dodgers",
     "away-abrv": "LAD",
     "home-team": "Padres",

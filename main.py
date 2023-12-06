@@ -67,6 +67,7 @@ def load_states():
         "13": states.state_13,
         "14": states.state_14,
         "15": states.state_15,
+        "16": states.state_16,
     }
     return game_states
 
