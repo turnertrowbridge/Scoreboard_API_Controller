@@ -24,13 +24,12 @@ def call_get_request():
 
 
 def post_data(payload_data):
-    # Convert the payload data to JSON (if needed)
+    # Convert the payload data to JSON
     payload_json = json.dumps(payload_data)
 
-    # Set the HTTP headers (if needed)
+    # Set the HTTP headers
     headers = {
         "Content-Type": "application/json",  # Set the appropriate content type
-        # "Authorization": "Bearer YourAccessToken"  # Include authorization headers if required
     }
 
     try:
