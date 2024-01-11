@@ -3,8 +3,9 @@ from time import sleep
 import requests
 import json
 import states
+import config
 
-api_url = "https://w1fyv4m4j3.execute-api.us-west-2.amazonaws.com/prod"
+api_url = config.api_key
 
 
 def call_get_request():

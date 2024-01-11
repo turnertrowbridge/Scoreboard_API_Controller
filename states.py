@@ -241,7 +241,7 @@ state_12 = {
     "home-score": 7,
     "inning": 9,
     "inning-half": "top",
-    "outs": 1,
+    "outs": 2,
     "batter": "Taylor",
     "pitcher": "Hader",
     "pitch_count": 9,
@@ -259,7 +259,7 @@ state_13 = {
     "home-score": 7,
     "inning": 9,
     "inning-half": "top",
-    "outs": 1,
+    "outs": 2,
     "batter": "Freeman",
     "pitcher": "Hader",
     "pitch_count": 9,
@@ -273,7 +273,7 @@ state_14 = {
     "away-abrv": "LAD",
     "home-team": "Padres",
     "home-abrv": "SD",
-    "away-score": 2,
+    "away-score": 5,
     "home-score": 7,
     "inning": 9,
     "inning-half": "top",
@@ -282,8 +282,8 @@ state_14 = {
     "pitcher": "Hader",
     "pitch_count": 10,
     "count": [0, 0],
-    "on_base": ["Taylor", "Outman", None, None],
-    "last-play": "Strikeout",
+    "on_base": [None, None, None, None],
+    "last-play": "Home Run",
 }
 
 state_15 = {
